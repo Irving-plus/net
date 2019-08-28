@@ -1,0 +1,33 @@
+package com.version.sdk.tcp;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Component;
+
+import com.version.common.util.LoggerUtil;
+
+@Component
+public class TcpConfig implements ApplicationListener<ContextRefreshedEvent> {
+
+	@Value(value = "${zhou.tcpHostIp}")
+	private String tcpIp;
+	@Value(value = "${zhou.tcpHostPort}")
+	private String tcpPort;
+	@Value(value = "${zhou.isTcpSever}")
+	private boolean isTcpSever;
+	@Override
+	public void onApplicationEvent(ContextRefreshedEvent event) {
+		LoggerUtil.info("netty服务监听启动");
+		try {
+			
+			TcpFactory.getTcpAccepter(isTcpSever).start(tcpIp, tcpPort);
+		} catch (Exception e) {
+			LoggerUtil.error("netty服务器启动失败");
+			e.printStackTrace();
+			System.exit(0);
+		}
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+server:
+  #port: ${random.int[10000,19999]}
+  port: 1001
+zhou:
+  tcpHostIp: 127.0.0.1
+  tcpHostPort: 99
+  isTcpSever: false
+#springBoot2.0 ”√  root  
+logging:
+  level:
+    root: debug,info,error  
+  
