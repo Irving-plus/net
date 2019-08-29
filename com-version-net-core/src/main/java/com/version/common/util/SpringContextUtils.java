@@ -33,12 +33,25 @@ public class SpringContextUtils implements ApplicationContextAware {
 	private static final Logger log = LoggerFactory.getLogger(SpringContextUtils.class);
 	public static ApplicationContext applicationContext; 
 	
+	
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext)
 			throws BeansException {
 		SpringContextUtils.applicationContext = applicationContext;
 		
 		log.info("applicationContext init success");
+	}
+	
+	@SuppressWarnings("unchecked")
+	public static <T> T getInstance(Class<?> clz) {
+		Object obj = applicationContext.getBean(clz);
+		if (obj == null) {
+			String clzName = clz.getSimpleName();
+			String first = String.valueOf(clzName.charAt(0));
+			clzName = first.toLowerCase() + clzName.substring(1);
+			obj = applicationContext.getBean(clzName);
+		}
+		return (T) obj;
 	}
 	
 	public static Object  getBean(Class clazz) {

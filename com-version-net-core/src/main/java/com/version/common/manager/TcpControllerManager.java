@@ -25,6 +25,8 @@ public class TcpControllerManager extends DynamicFind {
 		return annotationOn(clazz, TCPController.class);
 	}
 
+	
+	
 	@Override
 	public void findClass(Class<?> clz) throws Exception {
 		TCPController controller = clz.getAnnotation(TCPController.class);
@@ -32,15 +34,32 @@ public class TcpControllerManager extends DynamicFind {
 		if(controllerClazzMap.containsKey(name)) {
 			throw new Exception("扫描出重复的TcpController:"+name);
 		}
-		
-		
 		controllerClazzMap.put(name, clz);
+	
+		Method[] methods =  clz.getMethods();
+		for(Method method: methods) {
+			IProcess iProcess = method.getAnnotation(IProcess.class);
+			if(null!=iProcess) {
+				int code = method.getDeclaredAnnotation(IProcess.class).code();
+				if(methodMap.containsKey(code)) {
+					throw new Exception("扫描出重复的消息号:"+name+":"+code);
+				}
+				System.err.println(method);
+				methodMap.put(code, method);
+			}
+		
+		}
 	}
 
-	public Class<?> getProcess(String name) {
-		return controllerClazzMap.get(name);
+	public Class<?> getController(int code) {
+		return methodMap.get(code).getDeclaringClass();
 	}
-
+	
+	public Method getProcess(int code) {
+		return methodMap.get(code);
+	}
+	
+	
 	@Override
 	public void afterFind() {
 	}

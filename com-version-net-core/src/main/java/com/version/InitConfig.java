@@ -1,14 +1,17 @@
-package com.version.sdk.tcp;
+package com.version;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
+import com.version.common.manager.ProcessManager;
+import com.version.common.manager.TcpControllerManager;
 import com.version.common.util.LoggerUtil;
+import com.version.sdk.tcp.TcpFactory;
 
 @Component
-public class TcpConfig implements ApplicationListener<ContextRefreshedEvent> {
+public class InitConfig implements ApplicationListener<ContextRefreshedEvent> {
 
 	@Value(value = "${zhou.tcpHostIp}")
 	private String tcpIp;
@@ -22,6 +25,10 @@ public class TcpConfig implements ApplicationListener<ContextRefreshedEvent> {
 		try {
 			
 			TcpFactory.getTcpAccepter(isTcpSever).start(tcpIp, tcpPort);
+			//初始化自定义注解管理器
+			//ProcessManager.getManager().start();
+			TcpControllerManager.getManager().start();
+			
 		} catch (Exception e) {
 			LoggerUtil.error("netty服务器启动失败");
 			e.printStackTrace();

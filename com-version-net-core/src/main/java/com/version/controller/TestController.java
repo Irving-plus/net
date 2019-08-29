@@ -17,6 +17,7 @@ import com.version.common.entity.client.SuperClient;
 import com.version.common.entity.client.TcpSocketClient;
 import com.version.common.manager.ServerSessionManager;
 import com.version.sdk.common.IoSender;
+import com.version.sdk.tcp.TcpManager;
 
 @RestController
 public class TestController {
@@ -35,7 +36,7 @@ public class TestController {
 			//System.err.println(entroy.getKey());
 		}
 		
-		return  JSONObject.toJSONString( sessionManager.clients) ;
+		return  JSONObject.toJSONString( sessionManager.clients.size()) ;
 	}
 	/*
 	@GetMapping("/clientMess")
@@ -86,5 +87,16 @@ public class TestController {
         long t2 = System.currentTimeMillis();
 		System.out.println("do time:" +(t2 - t1));
 		return t2 -t1;
+	}
+	@GetMapping("/addClient")
+	public void addClient() {
+		try {
+			TcpManager.getManager().createClientTcp("127.0.0.1","99");
+			severMess(201, "cbx");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 }

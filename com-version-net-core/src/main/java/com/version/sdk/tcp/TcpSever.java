@@ -29,13 +29,13 @@ public class TcpSever extends TcpAccepter{
 		try {
 			//启动服务器
 			initServer(netIp, netPort);
-			ProcessManager.getManager().start();
 			//开启netty服务器启动监听
 			TcpManager.getManager().createSeverTcp(super.getNetIp(), super.getNetPort());
-			afterAccepter();
+			
 		} catch (Exception e) {
 			System.exit(0);
 		}
+		afterAccepter();
 		
 	}
 

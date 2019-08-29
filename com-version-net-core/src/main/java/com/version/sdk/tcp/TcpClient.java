@@ -29,7 +29,6 @@ public class TcpClient extends TcpAccepter{
 		try {
 			//启动服务器
 			initServer(netIp, netPort);
-			ProcessManager.getManager().start();
 			//开启netty服务器启动监听
 			TcpManager.getManager().createClientTcp(super.getNetIp(), super.getNetPort());
 			afterAccepter();
