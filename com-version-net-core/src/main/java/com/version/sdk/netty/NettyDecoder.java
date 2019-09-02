@@ -1,8 +1,6 @@
-package com.version.sdk.server.netty;
+package com.version.sdk.netty;
 
 import java.io.IOException;
-
-import com.version.common.util.LoggerUtil;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

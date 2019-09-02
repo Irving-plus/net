@@ -28,7 +28,7 @@ public class WorkManager extends DynamicFind {
 	private WorkManager() {
 		//定义线程池名称
 		ThreadFactory threadFactory = new ThreadFactoryBuilder()
-		        .setNameFormat("doWork-pool-%d").build();
+		        .setNameFormat("work-%d").build();
 		this.executor =new ThreadPoolExecutor(10, 200,  0L, TimeUnit.MILLISECONDS,
 		        new LinkedBlockingQueue<Runnable>(1024), threadFactory, new WorkManagerPoolAbortPolicy());
 		

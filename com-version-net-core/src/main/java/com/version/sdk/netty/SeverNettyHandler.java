@@ -1,23 +1,18 @@
-package com.version.sdk.server.netty;
+package com.version.sdk.netty;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 
 import com.alibaba.fastjson.JSONObject;
 import com.version.common.entity.client.SuperClient;
 import com.version.common.entity.client.TcpSocketClient;
-import com.version.common.manager.ProcessManager;
 import com.version.common.manager.ServerSessionManager;
 import com.version.common.manager.TcpControllerManager;
 import com.version.common.util.ConstantUtil;
 import com.version.common.util.LoggerUtil;
-import com.version.common.util.SpringContextUtils;
-import com.version.common.work.Work;
+import com.version.common.work.MessageWork;
 import com.version.common.work.WorkManager;
 import com.version.sdk.common.IoSender;
 import com.version.sdk.common.NetContext;
 import com.version.service.api.INetEventService;
-import com.version.tcpController.ExampleMessage;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
@@ -78,25 +73,26 @@ public class SeverNettyHandler extends SimpleChannelInboundHandler<Message> {
 	@SuppressWarnings("unchecked")
 	@Override
 	public void channelRead0(ChannelHandlerContext ctx, Message msg) throws Exception {
+		long beginTime = System.currentTimeMillis();
 		LoggerUtil.info("Server messageReceived: {},message: {}", ctx.channel().toString(), JSONObject.toJSONString(msg));
 		SuperClient superClient = ServerSessionManager.getManager().findClientBySession(ctx.channel());
 		superClient.setAttribute(ConstantUtil.LAST_RECIVED_TIME, System.currentTimeMillis());
+		System.out.println("netty线程"+Thread.currentThread().getName());
+		System.out.println("类"+readIdleTimes);
+		readIdleTimes ++;
 		//Class<? extends Work> clazz = (Class<? extends Work>) TcpControllerManager.getManager().getProcess(msg.getCode());
 		int code = msg.getCode();
 		Method method =  TcpControllerManager.getManager().getProcess(code);
 	
 		//设置心跳次数
-		readIdleTimes = 0;
+		//readIdleTimes = 0;
 		if (method != null) {
-			// 逻辑业务异步处理
-			ExampleMessage exampleMessage = new ExampleMessage();
-	
-			List<Object> objs = new ArrayList<>(); 
-			objs.add(method);
-			objs.add(SpringContextUtils.getBean(method.getDeclaringClass()));	
-			exampleMessage.init(objs);
+			// 逻辑业务异步处理,动态组装方法参数
+			MessageWork messageWork = new MessageWork();
+			//初始化用户加入逻辑服
+			messageWork.init(method,msg,superClient,beginTime);
 		
-			WorkManager.getManager().submit(exampleMessage);
+			WorkManager.getManager().submit(messageWork);
 		} else {
 			LoggerUtil.error("请求找不到处理器,消息号:" + msg.getCode());
 		}
@@ -112,7 +108,7 @@ public class SeverNettyHandler extends SimpleChannelInboundHandler<Message> {
 	        switch (event.state()){
 	            case READER_IDLE:
 	                eventType = "读空闲";
-	                readIdleTimes ++; // 读空闲的计数加1
+	                //readIdleTimes ++; // 读空闲的计数加1
 	    	      /*  LoggerUtil.info(ctx.channel().remoteAddress() + "超时事件：" +eventType);
 	    	        LoggerUtil.info("超时次数:"+readIdleTimes);*/
 	                break;
@@ -126,12 +122,12 @@ public class SeverNettyHandler extends SimpleChannelInboundHandler<Message> {
 	                break;
 	        }
 
-	       /* if(readIdleTimes > 3){
+	        if(readIdleTimes > 3000){
 	           LoggerUtil.info(" [server]读空闲超过3次，关闭连接");
 	            IoSender.sendTcpMsg(ctx.channel(), 200, "心跳超时踢出服务器链接");
 	            close(ctx);
 	            ctx.channel().close();
-	        }*/
+	        }
 		//super.userEventTriggered(ctx, evt);
 	}
 	

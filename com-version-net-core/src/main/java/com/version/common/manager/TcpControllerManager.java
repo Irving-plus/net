@@ -20,7 +20,7 @@ public class TcpControllerManager extends DynamicFind {
 	public static TcpControllerManager getManager() {
 		return processManager;
 	}
-
+	@Override
 	public boolean verification(Class<?> clazz) {
 		return annotationOn(clazz, TCPController.class);
 	}
@@ -43,6 +43,9 @@ public class TcpControllerManager extends DynamicFind {
 				int code = method.getDeclaredAnnotation(IProcess.class).code();
 				if(methodMap.containsKey(code)) {
 					throw new Exception("扫描出重复的消息号:"+name+":"+code);
+				}
+				if(method.getParameterTypes().length>1) {
+					throw new Exception("处理消息的参数至多一个:"+name+":"+method.getName());
 				}
 				System.err.println(method);
 				methodMap.put(code, method);

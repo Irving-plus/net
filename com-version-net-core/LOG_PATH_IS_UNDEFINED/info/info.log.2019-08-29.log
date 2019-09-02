@@ -353,7 +353,7 @@
 2019-08-29 16:22:53.045 [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2019-08-29 16:22:53.050 [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
 2019-08-29 16:22:53.337 [nioEventLoopGroup-3-1] INFO  com.version.common.util.LoggerUtil - Server messageReceived: [id: 0xd00db791, L:/127.0.0.1:99 - R:/127.0.0.1:55865],message: {"code":201,"data":"ImNieCI=","length":13}
-2019-08-29 16:22:53.338 [nioEventLoopGroup-3-1] INFO  com.version.common.util.LoggerUtil - 服务异常: [id: 0xd00db791, L:/127.0.0.1:99 - R:/127.0.0.1:55865],cause: java.lang.reflect.Method cannot be cast to com.version.sdk.server.netty.Message
+2019-08-29 16:22:53.338 [nioEventLoopGroup-3-1] INFO  com.version.common.util.LoggerUtil - 服务异常: [id: 0xd00db791, L:/127.0.0.1:99 - R:/127.0.0.1:55865],cause: java.lang.reflect.Method cannot be cast to Message
 2019-08-29 16:22:53.340 [nioEventLoopGroup-3-1] INFO  com.version.common.util.LoggerUtil - 关闭链接
 2019-08-29 16:22:53.341 [nioEventLoopGroup-3-1] INFO  com.version.common.util.LoggerUtil - 服务器连接断开   ChannelHandlerContext(SeverNettyHandler#0, [id: 0xd00db791, L:/127.0.0.1:99 ! R:/127.0.0.1:55865])
 2019-08-29 16:22:53.341 [nioEventLoopGroup-3-1] INFO  com.version.common.util.LoggerUtil - 关闭链接

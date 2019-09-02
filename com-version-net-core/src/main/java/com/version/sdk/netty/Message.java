@@ -1,4 +1,4 @@
-package com.version.sdk.server.netty;
+package com.version.sdk.netty;
 
 import java.io.Serializable;
 

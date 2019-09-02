@@ -1,0 +1,51 @@
+2019-08-30 10:22:16.879 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 10:22:18.909 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 10:55:35.387 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 11:05:26.411 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 11:05:28.438 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 11:10:02.033 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 11:10:04.543 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 11:22:12.930 [nioEventLoopGroup-3-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 11:25:24.517 [nioEventLoopGroup-4-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 13:42:37.724 [nioEventLoopGroup-2-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 17:06:06.410 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:06:23.976 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:06:34.646 [doWork-pool-0] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:06:34.647 [doWork-pool-1] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:07:34.674 [nioEventLoopGroup-2-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 17:07:34.674 [nioEventLoopGroup-3-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 17:09:37.010 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:09:39.608 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:09:47.630 [doWork-pool-1] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:09:47.630 [doWork-pool-0] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:10:47.655 [nioEventLoopGroup-2-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 17:10:47.655 [nioEventLoopGroup-3-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 17:13:29.013 [doWork-pool-2] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:13:52.649 [doWork-pool-3] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:13:52.656 [doWork-pool-4] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:14:16.364 [doWork-pool-5] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:14:16.367 [doWork-pool-6] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:14:16.376 [doWork-pool-7] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:14:49.174 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:14:51.249 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:14:54.739 [doWork-pool-1] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:14:54.740 [doWork-pool-0] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:15:49.838 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:15:55.751 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:16:56.622 [doWork-pool-0] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:17:56.647 [nioEventLoopGroup-2-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 17:28:21.372 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:28:23.598 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:28:30.947 [业务线程池-0] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:29:30.969 [nioEventLoopGroup-2-1] ERROR com.version.common.util.LoggerUtil - 请求找不到处理器,消息号:200
+2019-08-30 17:30:57.479 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:31:00.891 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:31:05.772 [业务线程池-0] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:32:47.851 [业务线程池-1] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:35:27.176 [业务线程池-2] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:36:30.134 [业务线程池-3] ERROR com.version.common.util.LoggerUtil - null
+2019-08-30 17:43:08.296 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:43:10.487 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:53:45.375 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:53:47.950 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-08-30 17:53:58.417 [业务线程池-0] ERROR com.version.common.util.LoggerUtil - null

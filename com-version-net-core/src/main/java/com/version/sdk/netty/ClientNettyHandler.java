@@ -1,4 +1,4 @@
-package com.version.sdk.server.netty;
+package com.version.sdk.netty;
 
 
 import io.netty.channel.ChannelHandlerContext;
@@ -12,7 +12,6 @@ import com.version.common.util.ConstantUtil;
 import com.version.common.util.LoggerUtil;
 import com.version.common.work.Work;
 import com.version.common.work.WorkManager;
-import com.version.sdk.common.IoSender;
 import com.version.sdk.common.NetContext;
 import com.version.service.api.INetEventService;
 

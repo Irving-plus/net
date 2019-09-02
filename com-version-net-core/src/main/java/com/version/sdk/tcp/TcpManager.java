@@ -5,14 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 
 import com.version.common.util.LoggerUtil;
-import com.version.sdk.server.netty.ClientNettyHandler;
-import com.version.sdk.server.netty.SeverNettyHandler;
-import com.version.sdk.server.netty.NettyDecoder;
-import com.version.sdk.server.netty.NettyEncoder;
+import com.version.sdk.netty.ClientNettyHandler;
+import com.version.sdk.netty.SeverNettyHandler;
+import com.version.sdk.netty.NettyDecoder;
+import com.version.sdk.netty.NettyEncoder;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -20,8 +19,6 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 
 public class TcpManager {

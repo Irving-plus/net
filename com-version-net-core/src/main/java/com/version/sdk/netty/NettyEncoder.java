@@ -1,6 +1,4 @@
-package com.version.sdk.server.netty;
-
-import com.version.common.util.LoggerUtil;
+package com.version.sdk.netty;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
