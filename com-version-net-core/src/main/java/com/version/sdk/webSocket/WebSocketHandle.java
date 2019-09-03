@@ -1,12 +1,12 @@
 package com.version.sdk.webSocket;
 
+import com.mchange.lang.LongUtils;
 import com.version.common.entity.client.SuperClient;
 import com.version.common.entity.client.WebSocketClient;
 import com.version.common.manager.ServerSessionManager;
 import com.version.common.util.LoggerUtil;
 import com.version.sdk.common.IoSender;
 import org.springframework.stereotype.Component;
-
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 
@@ -32,7 +32,7 @@ public class WebSocketHandle {
         // 将连接加入本地缓存管理器
         ServerSessionManager.getManager().putClient(WebSocketClient);
         LoggerUtil.info("初始化本地session"+session.toString());
-        IoSender.sendWebsocketMsg(session,200,"链接成功");
+        IoSender.sendWebsocketMsg(session,404,"链接成功");
 
     }
 
@@ -44,6 +44,7 @@ public class WebSocketHandle {
         SuperClient superClient = ServerSessionManager.getManager().findClientBySession(session);
         try {
             ServerSessionManager.getManager().closeClient(superClient);
+            LoggerUtil.info("连接断开"+session.getId());
         } catch (Exception e) {
             LoggerUtil.error("链接关闭异常");
             e.printStackTrace();
@@ -60,7 +61,7 @@ public class WebSocketHandle {
     @OnMessage
     public void onMessage(String message, Session session) {
         LoggerUtil.info("来自客户端的消息：{}",message);
-        IoSender.sendWebsocketMsg(session,200,"收到返回");
+        IoSender.sendWebsocketMsg(session,200,"123456乱码");
 
     }
 

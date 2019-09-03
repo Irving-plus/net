@@ -1,0 +1,51 @@
+2019-09-03 09:52:16.868 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 09:58:44.816 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 11:03:02.628 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 11:34:19.805 [http-nio-1000-exec-3] ERROR com.version.common.util.LoggerUtil - null
+2019-09-03 11:34:19.807 [http-nio-1000-exec-3] ERROR com.version.common.util.LoggerUtil - io异常sendWebsocketMsg
+2019-09-03 11:47:08.806 [http-nio-1000-exec-6] ERROR com.version.common.util.LoggerUtil - null
+2019-09-03 11:47:08.807 [http-nio-1000-exec-6] ERROR com.version.common.util.LoggerUtil - io异常sendWebsocketMsg
+2019-09-03 11:47:16.906 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 11:47:48.680 [http-nio-1000-exec-1] ERROR com.version.common.util.LoggerUtil - null
+2019-09-03 11:47:48.680 [http-nio-1000-exec-1] ERROR com.version.common.util.LoggerUtil - io异常sendWebsocketMsg
+2019-09-03 11:49:47.538 [http-nio-1000-exec-3] ERROR com.version.common.util.LoggerUtil - null
+2019-09-03 11:49:47.539 [http-nio-1000-exec-3] ERROR com.version.common.util.LoggerUtil - io异常sendWebsocketMsg
+2019-09-03 11:50:03.897 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 11:50:46.565 [http-nio-1000-exec-2] ERROR com.version.common.util.LoggerUtil - null
+2019-09-03 11:50:46.566 [http-nio-1000-exec-2] ERROR com.version.common.util.LoggerUtil - io异常sendWebsocketMsg
+2019-09-03 13:37:01.357 [http-nio-1000-exec-3] ERROR com.version.common.util.LoggerUtil - null
+2019-09-03 13:37:01.358 [http-nio-1000-exec-3] ERROR com.version.common.util.LoggerUtil - io异常sendWebsocketMsg
+2019-09-03 13:40:59.890 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 13:41:04.641 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 13:41:08.233 [main] ERROR com.version.common.util.LoggerUtil - java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:132)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:563)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1332)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:503)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:488)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:984)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:259)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:405)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-03 13:41:19.684 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 13:52:27.342 [http-nio-1000-exec-1] ERROR com.version.common.util.LoggerUtil - null
+2019-09-03 13:52:27.343 [http-nio-1000-exec-1] ERROR com.version.common.util.LoggerUtil - io异常sendWebsocketMsg
+2019-09-03 14:05:48.447 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 14:09:03.266 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 14:15:08.125 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 14:15:23.977 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 14:16:05.937 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 14:16:18.457 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-03 16:51:10.891 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'

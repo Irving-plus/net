@@ -24,10 +24,12 @@ public class IoSender {
 				byteBuffer.put(bytes);
 				byteBuffer.flip();
 				session.getBasicRemote().sendBinary(byteBuffer);
-				session.getBasicRemote().flushBatch();
+
 			}
 		} catch (Exception e) {
-			System.err.println("io异常sendWebsocketMsg");
+			e.printStackTrace();
+			LoggerUtil.error(e.getMessage());
+			LoggerUtil.error("io异常sendWebsocketMsg");
 		}
 	}
 	/**
@@ -38,23 +40,20 @@ public class IoSender {
 	 */
 	public static void sendTcpMsg(Channel  session, int code, Object obj) {
 		try {
-			Message message = new Message();
-
 			if(session.isOpen()) {
-				
 				byte[] bytes =  JSON.toJSONString(obj).getBytes();
+				Message message = new Message();
 				message.setCode(code);
 				message.setData(bytes);
 				message.setLength(bytes.length +8);
-				ChannelFuture future =  session.writeAndFlush(message);
-				
-				if(future.isSuccess()) {
-					LoggerUtil.info("消息发送成功");
-				}
-			
+				session.writeAndFlush(message);
 			}
 		} catch (Exception e) {
-			System.err.println("io异常sendTcpMsg");
+			e.printStackTrace();
+
+			LoggerUtil.error(e.getMessage());
+			LoggerUtil.error("io异常sendTcpMsg");
+
 		}
 		
 		
