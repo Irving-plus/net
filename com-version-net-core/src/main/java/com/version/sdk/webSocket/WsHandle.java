@@ -1,24 +1,32 @@
 package com.version.sdk.webSocket;
-
-import com.mchange.lang.LongUtils;
+import com.alibaba.fastjson.JSONObject;
 import com.version.common.entity.client.SuperClient;
 import com.version.common.entity.client.WebSocketClient;
 import com.version.common.manager.ServerSessionManager;
+import com.version.common.manager.TcpControllerManager;
+import com.version.common.util.ConstantUtil;
 import com.version.common.util.LoggerUtil;
+import com.version.common.work.MessageWork;
+import com.version.common.work.WorkManager;
 import com.version.sdk.common.IoSender;
 import org.springframework.stereotype.Component;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
+import java.lang.reflect.Method;
 
 /**
  * @Author 周希来
  * @Date 2019/9/2 14:50
  */
-@ServerEndpoint(value = "/websocket/room")
+@ServerEndpoint(value = "/websocket/room",
+      /*  ,
+        encoders = { MessageEncoder.class },*/
+        decoders = { WsDecoder.class }
+)
 @Component
-public class WebSocketHandle {
+public class WsHandle {
 
-    public WebSocketHandle(){
+    public WsHandle(){
 
         LoggerUtil.info("初始化websocket");
     }
@@ -32,7 +40,7 @@ public class WebSocketHandle {
         // 将连接加入本地缓存管理器
         ServerSessionManager.getManager().putClient(WebSocketClient);
         LoggerUtil.info("初始化本地session"+session.toString());
-        IoSender.sendWebsocketMsg(session,404,"链接成功");
+        IoSender.sendWebsocketMsg(session,200,"链接成功");
 
     }
 
@@ -59,8 +67,30 @@ public class WebSocketHandle {
      *            客户端发送过来的消息
      */
     @OnMessage
-    public void onMessage(String message, Session session) {
+    public void onMessage(WsMessage message, Session session) {
         LoggerUtil.info("来自客户端的消息：{}",message);
+        long beginTime = System.currentTimeMillis();
+        SuperClient superClient = ServerSessionManager.getManager().findClientBySession(session);
+        superClient.setAttribute(ConstantUtil.LAST_RECIVED_TIME, System.currentTimeMillis());
+        System.out.println("websocket"+Thread.currentThread().getName());
+        int code = message.getCode();
+        Method method =  TcpControllerManager.getManager().getProcess(code);
+        if (method != null) {
+            // 逻辑业务异步处理,动态组装方法参数
+            MessageWork messageWork = new MessageWork();
+            //初始化用户加入逻辑服
+            try {
+                messageWork.init(method,message,superClient,beginTime);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            WorkManager.getManager().submit(messageWork);
+        } else {
+            LoggerUtil.error("请求找不到处理器,消息号:" + message.getCode());
+        }
+
+
         IoSender.sendWebsocketMsg(session,200,"123456乱码");
 
     }

@@ -19,7 +19,7 @@ import io.netty.channel.Channel;
 
 import io.netty.channel.SimpleChannelInboundHandler;
 
-public class ClientNettyHandler  extends SimpleChannelInboundHandler<Message> {
+public class ClientNettyHandler  extends SimpleChannelInboundHandler<TcpMessage> {
 	private INetEventService netEventService = NetContext.getInstance(INetEventService.class);
 	@Override
 	public void channelActive(ChannelHandlerContext session) throws Exception {
@@ -67,7 +67,7 @@ public class ClientNettyHandler  extends SimpleChannelInboundHandler<Message> {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void channelRead0(ChannelHandlerContext session, Message msg) throws Exception {
+	public void channelRead0(ChannelHandlerContext session, TcpMessage msg) throws Exception {
 		LoggerUtil.info("Server messageReceived: {},message: {}", session.channel(), JSONObject.toJSONString(msg));
 		LoggerUtil.info("1111");
 

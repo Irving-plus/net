@@ -1,5 +1,7 @@
 package com.version.tcpController;
 
+import com.mchange.v2.log.LogUtils;
+import com.version.common.util.LoggerUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSONObject;
@@ -7,26 +9,35 @@ import com.version.common.annotation.IProcess;
 import com.version.common.annotation.TCPController;
 import com.version.common.manager.ThreadLocalManager;
 import com.version.doService.ExampleServiceImpl;
+import org.springframework.data.redis.core.RedisTemplate;
 
+/**
+ * @Author 周希来
+ * @Date 2019/9/4 18:57
+ */
 @TCPController(name = "net")
 public class NetController extends BaseTcpController{
 	@Autowired
 	private ExampleServiceImpl serviceImpl;
-	
+	@Autowired
+	RedisTemplate<Object,Object> redisTemplate;
+	@IProcess(code =200)
+	public void test(String json) {
+		System.out.println("连接成功");
+	}
+
+
 	@IProcess(code =201)
 	public void joinGame(String json) {
-		System.err.println("请求的数据201:"+json);
+		redisTemplate.opsForValue().set("user",getController());
+		String str = (String) redisTemplate.opsForValue().get("user");
+		System.out.println(str);
 		serviceImpl.doSomeThing("cbx");
-		System.err.println(JSONObject.toJSONString(ThreadLocalManager.getThreadLocalManager().getThreadLocal()));
-		long endTime = System.currentTimeMillis();
-		System.err.println(Thread.currentThread().getName());
-		System.err.println("执行时间"+(endTime -getBeginTime())+"毫秒");
 	}
 	
 	@IProcess(code =202)
 	public void join(String json) {
-		System.err.println("请求的数据:201"+json);
 		long endTime = System.currentTimeMillis();
-		System.err.println("执行时间"+(endTime -getBeginTime())+"毫秒");
+		LoggerUtil.info("执行时间"+(endTime -getBeginTime())+"毫秒");
 	}
 }

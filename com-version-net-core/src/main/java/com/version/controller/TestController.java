@@ -9,6 +9,8 @@ import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,18 +23,17 @@ import com.version.sdk.tcp.TcpManager;
 
 @RestController
 public class TestController {
-	
+	@Autowired
+	RedisTemplate<Object,Object> redisTemplate;
 	@GetMapping("/severMess")
 	public Object severMess(int code,String msg) {
 		ServerSessionManager sessionManager = ServerSessionManager.getManager();
 		for(Entry<String,SuperClient> entroy: sessionManager.clients.entrySet() ) {
 			SuperClient client = entroy.getValue();
 			if( client instanceof TcpSocketClient) {
-				TcpSocketClient tcpSocketClient = (TcpSocketClient)client;
-				IoSender.sendTcpMsg(tcpSocketClient.getSession(), code, msg);
+				TcpSocketClient tcpSocketClient = (TcpSocketClient)client;IoSender.sendTcpMsg(tcpSocketClient.getSession(), code, msg);
 				
 			}
-			
 			//System.err.println(entroy.getKey());
 		}
 		
@@ -98,5 +99,13 @@ public class TestController {
 			e.printStackTrace();
 		}
 		
+	}
+	@GetMapping("/test")
+	public void test() {
+		redisTemplate.opsForValue().set("user","zhou");
+		String str = (String) redisTemplate.opsForValue().get("user");
+		System.out.println(str);
+
+
 	}
 }

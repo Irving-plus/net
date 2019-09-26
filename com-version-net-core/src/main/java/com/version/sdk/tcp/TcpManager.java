@@ -1,5 +1,7 @@
 package com.version.sdk.tcp;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -65,8 +67,14 @@ public class TcpManager {
 						}
 					});
 			// 绑定端口
-			b.bind(netIp, Integer.parseInt(netPort)).sync();
-			LoggerUtil.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>TCP BIND IP:{},LISTEN PORT:{}", netIp, netPort);
+            InetAddress myip= null;
+            try {
+                myip = InetAddress.getLocalHost();
+            } catch (UnknownHostException e) {
+                e.printStackTrace();
+            }
+			b.bind(myip, Integer.parseInt(netPort)).sync();
+			LoggerUtil.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>TCP BIND IP:{},LISTEN PORT:{}", myip, netPort);
 			//f.channel().closeFuture().sync();
 		} catch (Exception e) {
 			bossGroup.shutdownGracefully();
@@ -108,4 +116,17 @@ public class TcpManager {
 			throw e;
 		}
 	}
+
+    public static void main(String[] args) {
+        InetAddress myip= null;
+        try {
+            myip = InetAddress.getLocalHost();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("你的IP地址是："+myip.getHostAddress());
+
+        System.out.println("主机名为："+myip.getHostName()+"。");
+    }
 }

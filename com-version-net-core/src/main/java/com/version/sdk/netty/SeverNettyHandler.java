@@ -19,7 +19,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.timeout.IdleStateEvent;
 
-public class SeverNettyHandler extends SimpleChannelInboundHandler<Message> {
+public class SeverNettyHandler extends SimpleChannelInboundHandler<TcpMessage> {
 	private INetEventService netEventService = NetContext.getInstance(INetEventService.class);
 	private int readIdleTimes;
 	public SeverNettyHandler(){
@@ -72,18 +72,15 @@ public class SeverNettyHandler extends SimpleChannelInboundHandler<Message> {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void channelRead0(ChannelHandlerContext ctx, Message msg) throws Exception {
+	public void channelRead0(ChannelHandlerContext ctx, TcpMessage msg) throws Exception {
 		long beginTime = System.currentTimeMillis();
 		LoggerUtil.info("Server messageReceived: {},message: {}", ctx.channel().toString(), JSONObject.toJSONString(msg));
 		SuperClient superClient = ServerSessionManager.getManager().findClientBySession(ctx.channel());
 		superClient.setAttribute(ConstantUtil.LAST_RECIVED_TIME, System.currentTimeMillis());
 		System.out.println("netty线程"+Thread.currentThread().getName());
-		System.out.println("类"+readIdleTimes);
 		readIdleTimes ++;
-		//Class<? extends Work> clazz = (Class<? extends Work>) TcpControllerManager.getManager().getProcess(msg.getCode());
 		int code = msg.getCode();
 		Method method =  TcpControllerManager.getManager().getProcess(code);
-	
 		//设置心跳次数
 		//readIdleTimes = 0;
 		if (method != null) {

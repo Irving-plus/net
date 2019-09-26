@@ -1,26 +1,25 @@
 package com.version.sdk.common;
 
-import java.io.IOException;
 import java.nio.ByteBuffer;
 
 import javax.websocket.Session;
 
 import com.alibaba.fastjson.JSON;
+import com.version.common.util.ByteUtil;
 import com.version.common.util.LoggerUtil;
-import com.version.sdk.netty.Message;
+import com.version.sdk.netty.TcpMessage;
 
 import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
 
 public class IoSender {
 
 	public static void sendWebsocketMsg(Session session, int code,  Object obj){
 		try {
 			if (session.isOpen()) {
-				byte[] bytes =  JSON.toJSONString(obj).getBytes();
+				byte[] bytes = ByteUtil.toBytesByObj(obj);
 				ByteBuffer byteBuffer = ByteBuffer.allocate(8 + bytes.length);
-				byteBuffer.putInt(code);
-				byteBuffer.putInt(8 + bytes.length);
+				byteBuffer.put(ByteUtil.toBytesByObj(code));
+				byteBuffer.put(ByteUtil.toBytesByObj(8 + bytes.length));
 				byteBuffer.put(bytes);
 				byteBuffer.flip();
 				session.getBasicRemote().sendBinary(byteBuffer);
@@ -42,7 +41,7 @@ public class IoSender {
 		try {
 			if(session.isOpen()) {
 				byte[] bytes =  JSON.toJSONString(obj).getBytes();
-				Message message = new Message();
+				TcpMessage message = new TcpMessage();
 				message.setCode(code);
 				message.setData(bytes);
 				message.setLength(bytes.length +8);

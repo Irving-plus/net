@@ -1,6 +1,13 @@
 package com.version.common.util;
 
+import com.alibaba.fastjson.JSON;
+
 public class ByteUtil {
+
+	public static byte[] toBytesByObj(Object obj) {
+			return  JSON.toJSONString(obj).getBytes();
+	}
+
 	public static byte[] intToBytes(int value) {
 		byte[] src = new byte[4];
 		src[3] = (byte) ((value >> 24) & 0xFF);
@@ -18,6 +25,7 @@ public class ByteUtil {
 		src[3] = (byte) (value & 0xFF);
 		return src;
 	}
+
 
 	public static int bytesToInt(byte[] src, int offset) {
 		int value;

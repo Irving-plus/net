@@ -1,5 +1,4 @@
 package com.version.tcpController;
-
 import com.version.common.entity.Controller;
 import com.version.common.entity.ThreadLocalObject;
 import com.version.common.manager.ThreadLocalManager;
@@ -30,7 +29,7 @@ public class BaseTcpController {
 	
 		return controller;
 	}
-	public Controller getLogicController() {
+	public LogicController getLogicController() {
 		Controller controller = getThreadLocalObject().getController();
 		if(null==controller) {
 			new Exception("用户是null");
@@ -38,7 +37,7 @@ public class BaseTcpController {
 		if(controller instanceof LogicController) {
 			return (LogicController)controller;
 		}
-		return controller;
+		return null;
 		
 	}
 	public long getBeginTime() {

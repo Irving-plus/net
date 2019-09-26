@@ -41,7 +41,7 @@ public class NettyDecoder extends LengthFieldBasedFrameDecoder {
 		}
 	}
 
-	private Message encodeToMessage(ByteBuf buffer) {
+	private TcpMessage encodeToMessage(ByteBuf buffer) {
 		int code = buffer.readInt();
 		int length = buffer.readInt();
 		// 基于长度拆包，剩余可读取数据一定是数据部分
@@ -52,7 +52,7 @@ public class NettyDecoder extends LengthFieldBasedFrameDecoder {
 		} else {
 			data = zeroData;
 		}
-		Message message = new Message();
+		TcpMessage message = new TcpMessage();
 		message.setCode(code);
 		message.setLength(length);
 		message.setData(data);
