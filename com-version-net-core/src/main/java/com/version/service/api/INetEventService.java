@@ -1,16 +1,16 @@
 package com.version.service.api;
 
-import com.version.common.entity.client.SuperClient;
+import com.version.common.entity.client.AbstractClient;
 
 public interface INetEventService {
 
-	public void sessionCreated(SuperClient superClient) throws Exception;
+	public void sessionCreated(AbstractClient superClient) throws Exception;
 
-	public void sessionOpened(SuperClient superClient) throws Exception;
+	public void sessionOpened(AbstractClient superClient) throws Exception;
 
-	public void sessionClosed(SuperClient superClient) throws Exception;
+	public void sessionClosed(AbstractClient superClient) throws Exception;
 
-	public void sessionExceptionCaught(SuperClient superClient)
+	public void sessionExceptionCaught(AbstractClient superClient)
 			throws Exception;
 
 	public <T> T frameBeforeCreateRoomEvent(Object... objs) throws Exception;

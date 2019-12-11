@@ -8,7 +8,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.version.common.annotation.IProcess;
 import com.version.common.annotation.TCPController;
 import com.version.common.manager.ThreadLocalManager;
-import com.version.doService.ExampleServiceImpl;
+import com.version.service.ExampleServiceImpl;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**

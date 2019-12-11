@@ -2,7 +2,7 @@ server:
   #port: ${random.int[10000,19999]}
   port: 1000
 zhou:
-  tcpHostIp: 172.16.37.216
+  tcpHostIp: 127.0.0.1
   tcpHostPort: 1001
   isTcpSever: true
 #springBoot2.0   root  
@@ -22,6 +22,6 @@ spring:
         min-idle: 0
     #sentinel哨兵配置
     sentinel:
-      password: 123456
+      password: 742042@Mn
       master: mymaster
       nodes: 114.55.92.111:26381,114.55.92.111:26380,114.55.92.111:26381

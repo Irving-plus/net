@@ -5,12 +5,12 @@ import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
 import com.version.common.find.Config;
-import com.version.common.find.DynamicFind;
+import com.version.common.find.AbstractDynamicFind;
 import com.version.common.util.LoggerUtil;
 import com.version.common.util.StringHelper;
 
 @SuppressWarnings("rawtypes")
-public class NetEventListenerManager extends DynamicFind {
+public class NetEventListenerManager extends AbstractDynamicFind {
 	private NetEventListenerManager() {
 		LoggerUtil.info("初始化事件监听管理器");
 	}

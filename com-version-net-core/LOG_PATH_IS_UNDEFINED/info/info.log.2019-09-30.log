@@ -1,0 +1,326 @@
+2019-09-30 16:27:51.790 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-30 16:27:51.989 [main] INFO  com.version.Application - Starting Application on USER-EE0DQKM4BJ with PID 6060 (C:\myProject\net\com-version-net-core\target\classes started by Administrator in C:\myProject\net\com-version-net-core)
+2019-09-30 16:27:51.989 [main] INFO  com.version.Application - The following profiles are active: sever
+2019-09-30 16:27:53.064 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-30 16:27:53.067 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-30 16:27:53.135 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 repository interfaces.
+2019-09-30 16:27:54.210 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1000 (http)
+2019-09-30 16:27:54.236 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1000"]
+2019-09-30 16:27:54.245 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-30 16:27:54.246 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-30 16:27:54.415 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-30 16:27:54.415 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2321 ms
+2019-09-30 16:27:54.485 [main] INFO  com.version.common.aop.LogAop - ³õÊ¼»¯controller·½·¨×·×ÙÆ÷³É¹¦£¡£¡£¡
+2019-09-30 16:27:54.486 [main] INFO  com.version.common.util.SpringContextUtils - applicationContext init success
+2019-09-30 16:27:54.833 [main] INFO  com.version.common.util.LoggerUtil - ³õÊ¼»¯websocket
+2019-09-30 16:27:55.165 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-30 16:27:55.545 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2019-09-30 16:27:55.554 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-30 16:27:55.555 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2019-09-30 16:27:55.555 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2019-09-30 16:27:55.556 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-30 16:27:55.557 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-30 16:27:55.557 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2019-09-30 16:27:55.557 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5e0ec41f
+2019-09-30 16:27:55.622 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2019-09-30 16:27:55.622 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-30 16:27:55.626 [main] INFO  com.version.common.util.LoggerUtil - netty·þÎñ¼àÌýÆô¶¯
+2019-09-30 16:27:55.628 [main] INFO  com.version.common.util.LoggerUtil - ========================================¿ªÊ¼Æô¶¯·þÎñÆ÷
+2019-09-30 16:27:55.629 [main] INFO  com.version.common.util.LoggerUtil - ========================================>µ±Ç°·þÎñÆ÷CUP¸öÊý:4
+2019-09-30 16:27:55.629 [main] INFO  com.version.common.util.LoggerUtil - ========================================>µ±Ç°·þÎñÆ÷×ÜÄÚ´æ:301MB
+2019-09-30 16:27:55.629 [main] INFO  com.version.common.util.LoggerUtil - ======================================>µ±Ç°·þÎñÆ÷¿ÕÏÐÄÚ´æ:136MB
+2019-09-30 16:27:55.629 [main] INFO  com.version.common.util.LoggerUtil - ===================================>µ±Ç°·þÎñÆ÷×Ü×î´óÈÝÁ¿ÄÚ´æ:1751MB
+2019-09-30 16:27:56.187 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x099edba3]'
+2019-09-30 16:27:56.196 [main] INFO  com.version.common.util.LoggerUtil - >>>>>>>>>>>>>>>>>>>>>>>>>>>>TCP BIND IP:USER-EE0DQKM4BJ/10.3.17.115,LISTEN PORT:1001
+2019-09-30 16:27:56.196 [main] INFO  com.version.common.util.LoggerUtil - ========================================·þÎñÆ÷Æô¶¯³É¹¦
+2019-09-30 16:27:56.238 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1000"]
+2019-09-30 16:27:56.263 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1000 (http) with context path ''
+2019-09-30 16:27:56.266 [main] INFO  com.version.Application - Started Application in 5.544 seconds (JVM running for 7.085)
+2019-09-30 16:29:11.038 [http-nio-1000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-30 16:29:11.038 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-30 16:29:11.061 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2019-09-30 16:31:40.194 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-30 16:31:40.391 [main] INFO  com.version.Application - Starting Application on USER-EE0DQKM4BJ with PID 4500 (C:\myProject\net\com-version-net-core\target\classes started by Administrator in C:\myProject\net\com-version-net-core)
+2019-09-30 16:31:40.392 [main] INFO  com.version.Application - The following profiles are active: sever
+2019-09-30 16:31:41.236 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-30 16:31:41.238 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-30 16:31:41.297 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2019-09-30 16:31:41.856 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1000 (http)
+2019-09-30 16:31:41.868 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1000"]
+2019-09-30 16:31:41.876 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-30 16:31:41.876 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-30 16:31:41.978 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-30 16:31:41.978 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1416 ms
+2019-09-30 16:31:42.040 [main] INFO  com.version.common.aop.LogAop - ³õÊ¼»¯controller·½·¨×·×ÙÆ÷³É¹¦£¡£¡£¡
+2019-09-30 16:31:42.041 [main] INFO  com.version.common.util.SpringContextUtils - applicationContext init success
+2019-09-30 16:31:42.306 [main] INFO  com.version.common.util.LoggerUtil - ³õÊ¼»¯websocket
+2019-09-30 16:31:42.557 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-30 16:31:42.846 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2019-09-30 16:31:42.854 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-30 16:31:42.855 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2019-09-30 16:31:42.855 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2019-09-30 16:31:42.856 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-30 16:31:42.856 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-30 16:31:42.856 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2019-09-30 16:31:42.856 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7c601d50
+2019-09-30 16:31:42.906 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2019-09-30 16:31:42.906 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-30 16:31:42.912 [main] INFO  com.version.common.util.LoggerUtil - netty·þÎñ¼àÌýÆô¶¯
+2019-09-30 16:31:42.914 [main] INFO  com.version.common.util.LoggerUtil - ========================================¿ªÊ¼Æô¶¯·þÎñÆ÷
+2019-09-30 16:31:42.915 [main] INFO  com.version.common.util.LoggerUtil - ========================================>µ±Ç°·þÎñÆ÷CUP¸öÊý:4
+2019-09-30 16:31:42.915 [main] INFO  com.version.common.util.LoggerUtil - ========================================>µ±Ç°·þÎñÆ÷×ÜÄÚ´æ:247MB
+2019-09-30 16:31:42.915 [main] INFO  com.version.common.util.LoggerUtil - ======================================>µ±Ç°·þÎñÆ÷¿ÕÏÐÄÚ´æ:86MB
+2019-09-30 16:31:42.915 [main] INFO  com.version.common.util.LoggerUtil - ===================================>µ±Ç°·þÎñÆ÷×Ü×î´óÈÝÁ¿ÄÚ´æ:1751MB
+2019-09-30 16:31:43.386 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xb0bdb4dc]'
+2019-09-30 16:31:43.394 [main] INFO  com.version.common.util.LoggerUtil - >>>>>>>>>>>>>>>>>>>>>>>>>>>>TCP BIND IP:USER-EE0DQKM4BJ/10.3.17.115,LISTEN PORT:1001
+2019-09-30 16:31:43.394 [main] INFO  com.version.common.util.LoggerUtil - ========================================·þÎñÆ÷Æô¶¯³É¹¦
+2019-09-30 16:31:43.438 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1000"]
+2019-09-30 16:31:43.452 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1000 (http) with context path ''
+2019-09-30 16:31:43.455 [main] INFO  com.version.Application - Started Application in 3.875 seconds (JVM running for 5.067)
+2019-09-30 16:31:49.477 [http-nio-1000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-30 16:31:49.478 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-30 16:31:49.488 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-09-30 16:39:14.817 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-30 16:39:14.914 [main] INFO  com.version.Application - Starting Application on USER-EE0DQKM4BJ with PID 6800 (C:\myProject\net\com-version-net-core\target\classes started by Administrator in C:\myProject\net\com-version-net-core)
+2019-09-30 16:39:14.915 [main] INFO  com.version.Application - The following profiles are active: sever
+2019-09-30 16:39:15.640 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-30 16:39:15.643 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-30 16:39:15.704 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2019-09-30 16:39:16.400 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1000 (http)
+2019-09-30 16:39:16.415 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1000"]
+2019-09-30 16:39:16.425 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-30 16:39:16.425 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-30 16:39:16.538 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-30 16:39:16.538 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1538 ms
+2019-09-30 16:39:16.608 [main] INFO  com.version.common.aop.LogAop - ³õÊ¼»¯controller·½·¨×·×ÙÆ÷³É¹¦£¡£¡£¡
+2019-09-30 16:39:16.609 [main] INFO  com.version.common.util.SpringContextUtils - applicationContext init success
+2019-09-30 16:39:16.937 [main] INFO  com.version.common.util.LoggerUtil - ³õÊ¼»¯websocket
+2019-09-30 16:39:17.230 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-30 16:39:17.582 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2019-09-30 16:39:17.593 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-09-30 16:39:17.594 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2019-09-30 16:39:17.594 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2019-09-30 16:39:17.595 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-09-30 16:39:17.595 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-09-30 16:39:17.595 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2019-09-30 16:39:17.596 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@49c1e294
+2019-09-30 16:39:17.659 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2019-09-30 16:39:17.660 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-09-30 16:39:17.665 [main] INFO  com.version.common.util.LoggerUtil - netty·þÎñ¼àÌýÆô¶¯
+2019-09-30 16:39:17.668 [main] INFO  com.version.common.util.LoggerUtil - ========================================¿ªÊ¼Æô¶¯·þÎñÆ÷
+2019-09-30 16:39:17.669 [main] INFO  com.version.common.util.LoggerUtil - ========================================>µ±Ç°·þÎñÆ÷CUP¸öÊý:4
+2019-09-30 16:39:17.669 [main] INFO  com.version.common.util.LoggerUtil - ========================================>µ±Ç°·þÎñÆ÷×ÜÄÚ´æ:282MB
+2019-09-30 16:39:17.669 [main] INFO  com.version.common.util.LoggerUtil - ======================================>µ±Ç°·þÎñÆ÷¿ÕÏÐÄÚ´æ:110MB
+2019-09-30 16:39:17.669 [main] INFO  com.version.common.util.LoggerUtil - ===================================>µ±Ç°·þÎñÆ÷×Ü×î´óÈÝÁ¿ÄÚ´æ:1751MB
+2019-09-30 16:39:18.164 [main] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xeb3ab7d1]'
+2019-09-30 16:39:18.174 [main] INFO  com.version.common.util.LoggerUtil - >>>>>>>>>>>>>>>>>>>>>>>>>>>>TCP BIND IP:USER-EE0DQKM4BJ/10.3.17.115,LISTEN PORT:1001
+2019-09-30 16:39:18.175 [main] INFO  com.version.common.util.LoggerUtil - ========================================·þÎñÆ÷Æô¶¯³É¹¦
+2019-09-30 16:39:18.235 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1000"]
+2019-09-30 16:39:18.255 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1000 (http) with context path ''
+2019-09-30 16:39:18.259 [main] INFO  com.version.Application - Started Application in 4.008 seconds (JVM running for 6.984)
+2019-09-30 16:39:28.783 [http-nio-1000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-30 16:39:28.784 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-30 16:39:28.796 [http-nio-1000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-09-30 16:45:25.088 [http-nio-1000-exec-7] INFO  com.version.common.util.LoggerUtil - ----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m×ÊÔ´:192.168.78.30 ping ÖÐÌ¨:13.14.100.35½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m×ÊÔ´:192.168.78.29 ping ÖÐÌ¨:13.14.100.35½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2mcommon:192.168.78.31 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2mcommon:192.168.78.32 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m·þÎñÆ÷×´Ì¬[0m: [32;2m¡Ì[0m
+ÑéÖ¤½áÊø
+----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0
+2019-09-30 17:14:58.161 [http-nio-1000-exec-10] INFO  com.version.common.util.LoggerUtil - ----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m×ÊÔ´:192.168.78.30 ping ÖÐÌ¨:13.14.100.35½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m×ÊÔ´:192.168.78.29 ping ÖÐÌ¨:13.14.100.35½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2mcommon:192.168.78.31 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2mcommon:192.168.78.32 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m·þÎñÆ÷×´Ì¬[0m: [32;2m¡Ì[0m
+ÑéÖ¤½áÊø
+----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0
+2019-09-30 17:24:57.475 [http-nio-1000-exec-3] INFO  com.version.common.util.LoggerUtil - ["","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap:sap-pi-prd.1919.cn½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping µµ°¸²¿:10.10.11.179½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap1:10.13.31.105½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap2:10.13.30.100½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap:sap-pi-prd.1919.cn½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping µµ°¸²¿:10.10.11.179½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap1:10.13.31.105½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap:sap-pi-prd.1919.cn½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping µµ°¸²¿:10.10.11.179½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap1:10.13.31.105½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap2:10.13.30.100½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m×ÊÔ´:192.168.78.30 ping ÖÐÌ¨:13.14.100.35½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2m×ÊÔ´:192.168.78.29 ping ÖÐÌ¨:13.14.100.35½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2mcommon:192.168.78.31 ping µµ°¸²¿:10.10.11.179½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0m\u001B[36;2mcommon:192.168.78.32 ping µµ°¸²¿:10.10.11.179½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m·þÎñÆ÷×´Ì¬\u001B[0m: \u001B[32;2m¡Ì\u001B[0m\nÑéÖ¤½áÊø\n","\u001B[0m\u001B[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:\u001B[0m\u001B[32;2m¡Ì\u001B[0m \n\u001B[36;2m","\u001B[0"]
+2019-09-30 17:36:23.596 [http-nio-1000-exec-6] INFO  com.version.common.util.LoggerUtil - ----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap:sap-pi-prd.1919.cn½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap1:10.13.31.105½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m×ÊÔ´:192.168.78.30 ping ÖÐÌ¨:13.14.100.35½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2m×ÊÔ´:192.168.78.29 ping ÖÐÌ¨:13.14.100.35½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2mcommon:192.168.78.31 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0m[36;2mcommon:192.168.78.32 ping µµ°¸²¿:10.10.11.179½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m·þÎñÆ÷×´Ì¬[0m: [32;2m¡Ì[0m
+ÑéÖ¤½áÊø
+----------:[0m[36;2m¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:[0m[32;2m¡Ì[0m 
+[36;2m----------:[0
+2019-09-30 17:46:01.144 [http-nio-1000-exec-9] INFO  com.version.common.util.LoggerUtil - ----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap:sap-pi-prd.1919.cn½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping µµ°¸²¿:10.10.11.179½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap1:10.13.31.105½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.33 ping sap2:10.13.30.100½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap:sap-pi-prd.1919.cn½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping µµ°¸²¿:10.10.11.179½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap1:10.13.31.105½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.34 ping sap2:10.13.30.100½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap:sap-pi-prd.1919.cn½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping µµ°¸²¿:10.10.11.179½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap1:10.13.31.105½á¹û:
+¡Ì
+----------:
+¹©Ó¦ÉÌ·þÎñÆ÷:192.168.78.42 ping sap2:10.13.30.100½á¹û:
+???
+----------------[192.168.78.33]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '3.5G', 'avail': '90G', 'used_percent': '4%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '332K', 'avail': '3.9G', 'used_percent': '1%', 'mouted_on': '/run'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/sys/fs/cgroup'}
+{'dir': 'tmpfs', 'size': '783M', 'used': '0', 'avail': '783M', 'used_percent': '0%', 'mouted_on': '/run/user/1000'}
+----------------[192.168.78.34]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '3.6G', 'avail': '90G', 'used_percent': '4%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '332K', 'avail': '3.9G', 'used_percent': '1%', 'mouted_on': '/run'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/sys/fs/cgroup'}
+{'dir': 'tmpfs', 'size': '783M', 'used': '0', 'avail': '783M', 'used_percent': '0%', 'mouted_on': '/run/user/1000'}
+----------------[192.168.78.42]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '4.2G', 'avail': '90G', 'used_percent': '5%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '388K', 'avail': '3.9G', 'used_percent': '1%', 'mouted_on': '/run'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/sys/fs/cgroup'}
+{'dir': 'tmpfs', 'size': '783M', 'used': '0', 'avail': '783M', 'used_percent': '0%', 'mouted_on': '/run/user/1000'}
+----------:
+×ÊÔ´:192.168.78.30 ping ÖÐÌ¨:13.14.100.35½á¹û:
+¡Ì
+----------:
+×ÊÔ´:192.168.78.29 ping ÖÐÌ¨:13.14.100.35½á¹û:
+¡Ì
+----------------[192.168.78.30]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '3.6G', 'avail': '90G', 'used_percent': '4%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '332K', 'avail': '3.9G', 'used_percent': '1%', 'mouted_on': '/run'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/sys/fs/cgroup'}
+{'dir': 'tmpfs', 'size': '783M', 'used': '0', 'avail': '783M', 'used_percent': '0%', 'mouted_on': '/run/user/1000'}
+----------------[192.168.78.29]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '8.3G', 'avail': '86G', 'used_percent': '9%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '332K', 'avail': '3.9G', 'used_percent': '1%', 'mouted_on': '/run'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/sys/fs/cgroup'}
+{'dir': 'tmpfs', 'size': '783M', 'used': '0', 'avail': '783M', 'used_percent': '0%', 'mouted_on': '/run/user/1000'}
+----------:
+common:192.168.78.31 ping µµ°¸²¿:10.10.11.179½á¹û:
+¡Ì
+----------:
+common:192.168.78.32 ping µµ°¸²¿:10.10.11.179½á¹û:
+¡Ì
+----------------[192.168.78.31]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '3.6G', 'avail': '90G', 'used_percent': '4%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '332K', 'avail': '3.9G', 'used_percent': '1%', 'mouted_on': '/run'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/sys/fs/cgroup'}
+{'dir': 'tmpfs', 'size': '783M', 'used': '0', 'avail': '783M', 'used_percent': '0%', 'mouted_on': '/run/user/1000'}
+----------------[192.168.78.32]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '6.9G', 'avail': '87G', 'used_percent': '8%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '332K', 'avail': '3.9G', 'used_percent': '1%', 'mouted_on': '/run'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/sys/fs/cgroup'}
+{'dir': 'tmpfs', 'size': '783M', 'used': '0', 'avail': '783M', 'used_percent': '0%', 'mouted_on': '/run/user/1000'}
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+NoneNoneNone 
+[36;2m·þÎñÆ÷×´Ì¬[0m: [32;2m¡Ì[0m
+ÑéÖ¤½áÊø
+000'}
+----------------[192.168.78.32]»úÆ÷×´¿öÈçÏÂ--------------------
+{'dir': '/dev/vda1', 'size': '99G', 'used': '6.9G', 'avail': '87G', 'used_percent': '8%', 'mouted_on': '/'}
+{'dir': 'devtmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev'}
+{'dir': 'tmpfs', 'size': '3.9G', 'used': '0', 'avail': '3.9G', 'used_percent': '0%', 'mouted_on': '/dev/shm'}
+{'dir': 't

@@ -2,16 +2,16 @@ package com.version.service;
 
 import java.util.concurrent.Callable;
 
+import com.version.common.entity.client.AbstractClient;
 import org.springframework.stereotype.Service;
 
-import com.version.common.entity.client.SuperClient;
 import com.version.common.event.NetCallbackEventListener;
 import com.version.common.event.NetEventListener;
 import com.version.common.event.NetEventListenerManager;
 import com.version.common.event.NetEventType;
 import com.version.common.find.Config;
 import com.version.common.util.LoggerUtil;
-import com.version.common.work.AynWork;
+import com.version.common.work.AbstractAynWork;
 import com.version.common.work.Work;
 import com.version.common.work.WorkManager;
 import com.version.service.api.INetEventService;
@@ -24,7 +24,7 @@ public class NetEventServiceImpl implements INetEventService {
 			throws Exception {
 		if (listener != null) {
 			if (listener.asynchronous()) {
-				WorkManager.getManager().submit(new AynWork() {
+				WorkManager.getManager().submit(new AbstractAynWork() {
 					private static final long serialVersionUID = -6773796283107715207L;
 					Object[] objs;
 
@@ -48,7 +48,7 @@ public class NetEventServiceImpl implements INetEventService {
 	}
 
 	@Override
-	public void sessionCreated(SuperClient superClient) throws Exception {
+	public void sessionCreated(AbstractClient superClient) throws Exception {
 		final NetEventListener listener = NetEventListenerManager.getManager()
 				.getNetEventListener(NetEventType.SESSION_CREATED,
 						Config.SERVER_TYPE);
@@ -56,7 +56,7 @@ public class NetEventServiceImpl implements INetEventService {
 	}
 
 	@Override
-	public void sessionOpened(SuperClient superClient) throws Exception {
+	public void sessionOpened(AbstractClient superClient) throws Exception {
 		final NetEventListener listener = NetEventListenerManager.getManager()
 				.getNetEventListener(NetEventType.SESSION_OPENED,
 						Config.SERVER_TYPE);
@@ -64,7 +64,7 @@ public class NetEventServiceImpl implements INetEventService {
 	}
 
 	@Override
-	public void sessionClosed(SuperClient superClient) throws Exception {
+	public void sessionClosed(AbstractClient superClient) throws Exception {
 		final NetEventListener listener = NetEventListenerManager.getManager()
 				.getNetEventListener(NetEventType.SESSION_CLOSED,
 						Config.SERVER_TYPE);
@@ -72,7 +72,7 @@ public class NetEventServiceImpl implements INetEventService {
 	}
 
 	@Override
-	public void sessionExceptionCaught(SuperClient superClient)
+	public void sessionExceptionCaught(AbstractClient superClient)
 			throws Exception {
 		final NetEventListener listener = NetEventListenerManager.getManager()
 				.getNetEventListener(NetEventType.SESSION_EXCEPTION,

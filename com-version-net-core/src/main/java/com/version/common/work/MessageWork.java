@@ -2,14 +2,12 @@ package com.version.common.work;
 
 import java.lang.reflect.Method;
 
-import com.alibaba.fastjson.JSON;
+import com.version.common.entity.client.AbstractClient;
 import com.version.common.entity.message.IMessage;
 import org.springframework.util.StringUtils;
 
-import com.alibaba.fastjson.JSONObject;
-import com.version.common.entity.Controller;
+import com.version.common.entity.AbstractController;
 import com.version.common.entity.ThreadLocalObject;
-import com.version.common.entity.client.SuperClient;
 import com.version.common.manager.CacheServer;
 import com.version.common.manager.RoomManager;
 import com.version.common.manager.ThreadLocalManager;
@@ -17,7 +15,6 @@ import com.version.common.util.LoggerUtil;
 import com.version.common.util.SpringContextUtils;
 import com.version.game.LogicController;
 import com.version.game.Room;
-import com.version.sdk.netty.TcpMessage;
 
 public class MessageWork implements Work{
 
@@ -26,7 +23,7 @@ public class MessageWork implements Work{
 
 	private Object data;
 	private Method method ;
-	private SuperClient superClient;
+	private AbstractClient superClient;
 	private long beginTime;
 	private ThreadLocalObject threadLocalObject;
 	private IMessage msg;
@@ -56,7 +53,7 @@ public class MessageWork implements Work{
 
 		 this.method = (Method)objs[0];
 		 this.msg  = (IMessage)objs[1];
-		 this.superClient = (SuperClient)objs[2];
+		 this.superClient = (AbstractClient)objs[2];
 		 this.beginTime = (Long)objs[3];
 		 this.data  = msg.getData((Class) method.getGenericParameterTypes()[0]);
 		 int code = msg.getCode();
@@ -65,7 +62,7 @@ public class MessageWork implements Work{
 		 //200加入逻辑服 
 		 //初始化用户,房间信息
 		 if(code !=200) {
-			 Controller controller = CacheServer.getCache().getOnlineaccounts().get(superClient.getSessionId());
+			 AbstractController controller = CacheServer.getOnlineaccounts().get(superClient.getSessionId());
 			 if(controller instanceof LogicController) {
 				 LogicController logicController = (LogicController) controller;	
 				 String roomId= logicController.getRoomId();

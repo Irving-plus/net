@@ -1,8 +1,8 @@
 package com.version.game;
 
-import com.version.common.entity.Controller;
+import com.version.common.entity.AbstractController;
 
-public class LogicController extends Controller {
+public class LogicController extends AbstractController {
 	
 	private static final long serialVersionUID = -1982109289223510826L;
 	private String uniqueId;

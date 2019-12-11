@@ -4,9 +4,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.version.common.annotation.IProcess;
-import com.version.common.find.DynamicFind;
+import com.version.common.find.AbstractDynamicFind;
 
-public class ProcessManager extends DynamicFind {
+public class ProcessManager extends AbstractDynamicFind {
 	private static final Map<Integer, Class<?>> processClazzMap = new ConcurrentHashMap<Integer, Class<?>>();
 
 	private ProcessManager() {
@@ -17,7 +17,7 @@ public class ProcessManager extends DynamicFind {
 	public static ProcessManager getManager() {
 		return processManager;
 	}
-
+	@Override
 	public boolean verification(Class<?> clazz) {
 		return annotationOn(clazz, IProcess.class);
 	}

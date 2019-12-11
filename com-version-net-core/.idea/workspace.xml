@@ -1,56 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b007fed4-6179-435c-bd5b-c16951b86971" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/version/common/aop/LogAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/message/IMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/TcpMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/version/common/util/ShUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/error/error.log.2019-08-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/error/error.log.2019-08-30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/error/error.log.2019-09-02.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/error/error.log.2019-09-03.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/info/info.log.2019-08-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/info/info.log.2019-08-30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/info/info.log.2019-09-02.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOG_PATH_IS_UNDEFINED/info/info.log.2019-09-03.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/com-version-net-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com-version-net-core.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/annotation/TCPController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/annotation/TCPController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/InitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/InitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/entity/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/AbstractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/entity/IMMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/IMMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/entity/ThreadLocalObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/ThreadLocalObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/util/ByteUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/util/ByteUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/entity/client/SuperClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/client/AbstractClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/entity/client/TcpSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/client/TcpSocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/entity/client/WebSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/client/WebSocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/entity/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/entity/message/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/event/NetEventListenerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/event/NetEventListenerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/find/DynamicFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/find/AbstractDynamicFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/manager/CacheServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/manager/CacheServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/manager/ProcessManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/manager/ProcessManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/manager/ServerSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/session/ServerSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/manager/TcpControllerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/manager/TcpControllerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/manager/ThreadLocalManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/manager/ThreadLocalManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/util/HttpClientFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/util/KDBMD5Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/util/print/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/util/print/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/work/AynWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/work/AbstractAynWork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/work/MessageWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/work/MessageWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/common/IoSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/common/IoSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/ClientNettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/ClientNettyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/SeverNettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/SeverNettyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WebSocketHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/work/QueueWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/work/AbstractQueueWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/work/TimeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/work/TimeWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/work/TimerCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/work/TimerCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/common/work/WorkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/common/work/WorkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/doService/ExampleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/service/ExampleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/game/LogicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/game/LogicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/common/IoSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/common/IoSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/common/NetContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/common/NetContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/ClientNettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/netty/ClientNettyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/netty/NettyDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/netty/NettyEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/SeverNettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/netty/SeverNettyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/TcpMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/netty/TcpMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/ITcpAccepter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/tcp/ITcpAccepter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpAccepter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpAccepter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpSever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpSever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/webSocket/WsDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/webSocket/WsHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/network/webSocket/WsMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/service/NetEventServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/service/NetEventServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/version/service/api/INetEventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/service/api/INetEventService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/version/tcpController/BaseTcpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/tcpController/BaseTcpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/version/tcpController/NetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/version/tcpController/NetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-client.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-client.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-sever.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-sever.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,60 +74,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="537">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-              <folding>
-                <element signature="e#2349#2829#0" expanded="true" />
-                <element signature="e#2828#2829#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2350">
+              <caret line="110" column="27" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsMessage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-sever.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1650" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+            <state relative-caret-position="600">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application-client.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="5325">
+              <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/tcpController/BaseTcpController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="275">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -127,39 +122,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/version/tcpController/NetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/annotation/TCPController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/client/AbstractClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="250">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+              <folding>
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/annotation/PermissionGuest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/netty/SeverNettyHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="500">
+              <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/doService/ExampleServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/client/TcpSocketClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="100">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -169,8 +167,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="TypeScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -180,13 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/version/common/manager/RoomManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/server/netty/SeverNettyHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/common/manager/TcpControllerManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/common/work/WorkManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/common/find/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/WebSocket.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/WebSocketSever.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/WebSocketHandle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/config/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/common/util/ByteUtil.java" />
@@ -201,18 +193,43 @@
         <option value="$PROJECT_DIR$/src/main/java/com/version/tcpController/BaseTcpController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/common/entity/ThreadLocalObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/netty/TcpMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/common/work/MessageWork.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/common/annotation/TCPController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsDecoder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Dockerfile" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-sever.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/common/aop/LogAop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/version/tcpController/NetController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-client.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/manager/ThreadLocalManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/util/print/DateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/manager/ProcessManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/work/MessageWork.java" />
+        <option value="$PROJECT_DIR$/html/typescript/hello.ts" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/work/AynWork.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/work/AbstractAynWork.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/entity/AbstractController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/find/AbstractDynamicFind.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/work/AbstractQueueWork.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/entity/client/SuperClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpAccepter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/entity/IMMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/service/ExampleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/socket/common/NetContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/socket/netty/TcpMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/InitConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/socket/tcp/TcpSever.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/socket/tcp/TcpClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/socket/tcp/TcpFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/socket/netty/SeverNettyHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/tcpController/NetController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/session/ServerSessionManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/util/DoSh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/common/util/ShUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/version/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-sever.yml" />
       </list>
     </option>
   </component>
@@ -236,11 +253,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="191" />
-    <option name="y" value="3" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="8" />
     <option name="width" value="1410" />
-    <option name="height" value="836" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -249,6 +266,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,20 +277,7 @@
             <path>
               <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="com-version-net-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-version-net-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com-version-net-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
@@ -281,34 +286,33 @@
             <path>
               <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.5.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.5.2" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.5.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.5.2" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.5.2.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="ibatis" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com-version-net-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.5.2" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.5.2.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="ibatis" type="462c0819:PsiDirectoryNode" />
-              <item name="javassist" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,15 +322,18 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569320604790" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569837810305" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="C:\Program Files\nodejs\node_global\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.version.session" />
+      <recent name="com.version.service" />
       <recent name="com.version.common.aop" />
       <recent name="com.version.sdk.webSocket" />
     </key>
@@ -352,13 +359,26 @@
     </option>
     <option name="contentProportion" value="0.15641361" />
   </component>
-  <component name="RunManager" selected="Spring Boot.client">
-    <configuration name="TcpManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.version.sdk.tcp.TcpManager" />
+  <component name="RunManager" selected="Spring Boot.sever">
+    <configuration name="ShUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.version.common.util.ShUtil" />
       <module name="com-version-net-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.version.sdk.tcp.*" />
+          <option name="PATTERN" value="com.version.common.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TcpManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.version.network.tcp.TcpManager" />
+      <module name="com-version-net-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.version.network.tcp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -390,11 +410,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.TcpManager" />
+      <item itemvalue="Application.ShUtil" />
       <item itemvalue="Spring Boot.client" />
       <item itemvalue="Spring Boot.sever" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShUtil" />
         <item itemvalue="Application.TcpManager" />
       </list>
     </recent_temporary>
@@ -427,12 +449,20 @@
       <workItem from="1569288968028" duration="1968000" />
       <workItem from="1569302268581" duration="9253000" />
       <workItem from="1569375168028" duration="6758000" />
-      <workItem from="1569463178351" duration="3095000" />
+      <workItem from="1569463178351" duration="3702000" />
+      <workItem from="1569547880597" duration="6671000" />
+      <workItem from="1569569789475" duration="6367000" />
+      <workItem from="1569720893074" duration="3206000" />
+      <workItem from="1569808682333" duration="7144000" />
+      <workItem from="1570497073655" duration="3012000" />
+      <workItem from="1570513227544" duration="662000" />
+      <workItem from="1571290718206" duration="931000" />
+      <workItem from="1575013499305" duration="650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137850000" />
+    <option name="totallyTimeSpent" value="167100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,37 +475,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73888886" visible="true" weight="0.25449872" />
-      <window_info id="Structure" order="1" sideWeight="0.2611111" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5945946" visible="true" weight="0.23843187" />
+      <window_info id="Structure" order="1" sideWeight="0.4054054" side_tool="true" weight="0.25255623" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50161815" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.4054054" side_tool="true" weight="0.25255623" />
+      <window_info id="Web" order="7" sideWeight="0.4054054" side_tool="true" weight="0.25255623" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21130551" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.20592193" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27994618" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32839838" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32859176" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50064266" side_tool="true" weight="0.66218036" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.47034484" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5012854" side_tool="true" visible="true" weight="0.14266488" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.2139973" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32859176" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4993573" visible="true" weight="0.14266488" />
-      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49871466" visible="true" weight="0.14266488" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32839838" />
+      <window_info anchor="bottom" id="TypeScript" order="17" weight="0.31090176" />
+      <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.10632571" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.098971725" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.13599183" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -488,398 +519,356 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/version/session/ServerSessionManager.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/message/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/util/ByteUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="92">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeBase.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="209">
+          <caret line="161" column="13" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47-sources.jar!/com/alibaba/fastjson/JSON.java">
+    <entry file="file://$PROJECT_DIR$/html/typescript/hello.ts" />
+    <entry file="file://$PROJECT_DIR$/html/typescript/hello.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/util/KDBMD5Utils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/util/HttpClientFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/event/NetEventType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="294" column="24" selection-start-line="294" selection-start-column="24" selection-end-line="294" selection-end-column="24" />
+        <state relative-caret-position="-1024">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBinary.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/work/AbstractAynWork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="125">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/org/apache/tomcat/websocket/server/WsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="281" column="18" selection-start-line="281" selection-start-column="18" selection-end-line="281" selection-end-column="18" />
-          <folding>
-            <element signature="e#8985#8986#0" expanded="true" />
-            <element signature="e#9040#9041#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/netty/NettyEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/manager/CacheServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/client/TcpSocketClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/ThreadLocalObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/game/LogicController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/work/JobImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/message/IMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/netty/TcpMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/javassist/ClassPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/ByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17050">
-          <caret line="713" column="22" selection-start-line="713" selection-start-column="22" selection-end-line="713" selection-end-column="22" />
-          <folding>
-            <element signature="e#19972#19973#0" expanded="true" />
-            <element signature="e#20018#20019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/charset/StandardCharsets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/URLEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4075">
-          <caret line="199" column="25" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.2/mybatis-3.5.2.jar!/org/apache/ibatis/javassist/CtClass.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/common/IoSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/work/MessageWork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="75">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpAccepter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/manager/TcpControllerManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.36.Final/netty-transport-4.1.36.Final.jar!/io/netty/channel/ChannelOption.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/netty/SeverNettyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1775">
-          <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpSever.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/work/WorkManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/find/AbstractDynamicFind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state relative-caret-position="200">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/ITcpAccepter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/work/AbstractQueueWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/tcpController/BaseTcpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-246">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/AbstractController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/BigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/IMMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/SmallPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/ThreadLocalObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/UniqueId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/event/NetCallbackEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/service/ExampleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/common/IoSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="19" column="78" lean-forward="true" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/common/NetContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/netty/TcpMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/netty/NettyDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/netty/ClientNettyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/tcp/ITcpAccepter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/InitConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="1550">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-sever.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/netty/ClientNettyHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpAccepter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.2/mybatis-3.5.2.jar!/org/apache/ibatis/javassist/ClassPool.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
+        <state relative-caret-position="250">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="850">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/aop/LogAop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/tcp/TcpSever.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="625">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/session/ServerSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23150">
+          <caret line="1005" column="19" selection-start-line="1005" selection-start-column="19" selection-end-line="1005" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#44347#44348#0" expanded="true" />
+            <element signature="e#44395#44396#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/webSocket/WsHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/InitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="33" selection-start-line="33" selection-end-line="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4700">
-          <caret line="188" column="32" selection-start-line="182" selection-start-column="20" selection-end-line="188" selection-end-column="32" />
+        <state relative-caret-position="625">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/controller/TestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/util/ShUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-client.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/tcpController/BaseTcpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/annotation/PermissionGuest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/doService/ExampleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/client/SuperClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/annotation/TCPController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/tcpController/NetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/tcp/TcpManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-          <folding>
-            <element signature="e#2349#2829#0" expanded="true" />
-            <element signature="e#2828#2829#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/sdk/webSocket/WsMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="900">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650" />
+        <state relative-caret-position="2350">
+          <caret line="110" column="27" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
+        </state>
       </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5325">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/tcpController/NetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/client/AbstractClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/network/netty/SeverNettyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/version/common/entity/client/TcpSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-sever.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-client.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class ThreadLocalObject {
 	private Room room;
-	private Controller controller;
+	private AbstractController controller;
 	private long beginTime;
 
 }

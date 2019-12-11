@@ -9,7 +9,7 @@ public class DateUtil {
 	public static final SimpleDateFormat df_ymd =new SimpleDateFormat("yyyyMMdd");  
 	public static final SimpleDateFormat df_ymd_hms=new SimpleDateFormat("yyyyMMddHHmmss");  
 	public static long nowTime() {
-		return new Date().getTime();
+		return System.currentTimeMillis();
 	}
 	public static Date format(long time){
 		return new Date(time);
