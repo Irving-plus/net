@@ -4,7 +4,7 @@ package com.version;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
-import com.version.sdk.common.NetContext;
+import com.version.network.common.NetContext;
 
 
 @Import({ NetContext.class })

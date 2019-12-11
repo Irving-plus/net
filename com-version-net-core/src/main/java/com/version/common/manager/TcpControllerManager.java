@@ -6,9 +6,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import com.version.common.annotation.IProcess;
 import com.version.common.annotation.TCPController;
-import com.version.common.find.DynamicFind;
+import com.version.common.find.AbstractDynamicFind;
 
-public class TcpControllerManager extends DynamicFind {
+public class TcpControllerManager extends AbstractDynamicFind {
 	private static final Map<String, Class<?>> controllerClazzMap = new ConcurrentHashMap<String, Class<?>>();
 	private static final Map<Integer, Method>  methodMap = new ConcurrentHashMap<Integer, Method>();
 

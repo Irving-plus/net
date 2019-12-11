@@ -2,6 +2,9 @@ package com.version.common.manager;
 
 import com.version.common.entity.ThreadLocalObject;
 
+/**
+ * @author 周希来
+ */
 public class ThreadLocalManager {
 	private static ThreadLocal<ThreadLocalObject> threadLocal = new ThreadLocal<>();
 	      

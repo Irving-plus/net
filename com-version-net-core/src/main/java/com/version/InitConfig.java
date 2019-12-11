@@ -5,10 +5,9 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
-import com.version.common.manager.ProcessManager;
 import com.version.common.manager.TcpControllerManager;
 import com.version.common.util.LoggerUtil;
-import com.version.sdk.tcp.TcpFactory;
+import com.version.network.tcp.TcpFactory;
 
 @Component
 public class InitConfig implements ApplicationListener<ContextRefreshedEvent> {
@@ -24,7 +23,7 @@ public class InitConfig implements ApplicationListener<ContextRefreshedEvent> {
 		LoggerUtil.info("netty服务监听启动");
 		try {
 			
-			TcpFactory.getTcpAccepter(isTcpSever).start(tcpIp, tcpPort);
+			TcpFactory.start(isTcpSever,tcpIp, tcpPort);
 			//初始化自定义注解管理器
 			//ProcessManager.getManager().start();
 			TcpControllerManager.getManager().start();

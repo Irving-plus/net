@@ -16,10 +16,10 @@ import org.quartz.impl.StdSchedulerFactory;
 import org.quartz.spi.MutableTrigger;
 
 import com.version.common.annotation.IInterval;
-import com.version.common.find.DynamicFind;
+import com.version.common.find.AbstractDynamicFind;
 import com.version.common.util.LoggerUtil;
 
-public class TimerCenter extends DynamicFind {
+public class TimerCenter extends AbstractDynamicFind {
 	private Scheduler scheduled;
 	public static String WORK_CLAZZ = "WORK_CLAZZ";
 	private final Map<Class<? extends TimeWork>, Long> timeWorks = new HashMap<Class<? extends TimeWork>, Long>();

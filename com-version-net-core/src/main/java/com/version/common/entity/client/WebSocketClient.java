@@ -2,7 +2,7 @@ package com.version.common.entity.client;
 
 import javax.websocket.Session;
 
-public class WebSocketClient extends SuperClient {
+public class WebSocketClient extends AbstractClient {
 	private static final long serialVersionUID = 4908615652004598245L;
 	private transient Session session;
 	private String endPoint;

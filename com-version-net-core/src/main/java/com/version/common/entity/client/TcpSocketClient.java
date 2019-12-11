@@ -6,7 +6,7 @@ import com.version.common.entity.AttributeKeyConst;
 
 import io.netty.channel.Channel;
 
-public class TcpSocketClient extends SuperClient {
+public class TcpSocketClient extends AbstractClient {
 	private static final long serialVersionUID = -2360318604421494124L;
 	private transient Channel session;
 

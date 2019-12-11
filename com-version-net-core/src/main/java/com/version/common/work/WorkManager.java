@@ -12,10 +12,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.version.common.find.DynamicFind;
+import com.version.common.find.AbstractDynamicFind;
 import com.version.common.util.LoggerUtil;
 
-public class WorkManager extends DynamicFind {
+public class WorkManager extends AbstractDynamicFind {
 	private final Map<String, Class<? extends Work>> allWorks = new ConcurrentHashMap<String, Class<? extends Work>>();
 	private static WorkManager workManager = new WorkManager();
 	private final Map<Long, WorkerQueue> workerQueues;
@@ -61,11 +61,11 @@ public class WorkManager extends DynamicFind {
 	}
 
 	public void submit(Work work) {
-		if (work instanceof AynWork) {
-			AynWork aynWork = (AynWork) work;
+		if (work instanceof AbstractAynWork) {
+			AbstractAynWork aynWork = (AbstractAynWork) work;
 			executor.submit(aynWork);
-		} else if (work instanceof QueueWork) {
-			QueueWork queueWork = (QueueWork) work;
+		} else if (work instanceof AbstractQueueWork) {
+			AbstractQueueWork queueWork = (AbstractQueueWork) work;
 			long queueId = queueWork.getId();
 			synchronized (workerQueues) {
 				WorkerQueue worker = workerQueues.get(queueId);
@@ -87,10 +87,10 @@ public class WorkManager extends DynamicFind {
 		}
 	}
 
-	private class WorkerQueue extends AynWork {
+	private class WorkerQueue extends AbstractAynWork {
 		private static final long serialVersionUID = 5492935692105924020L;
 		private final long queueId;
-		private final LinkedBlockingDeque<QueueWork> queueWorks;
+		private final LinkedBlockingDeque<AbstractQueueWork> queueWorks;
 
 		@SuppressWarnings("unused")
 		public long getWorkQueue() {
@@ -99,10 +99,10 @@ public class WorkManager extends DynamicFind {
 
 		public WorkerQueue(long queueId) {
 			this.queueId = queueId;
-			queueWorks = new LinkedBlockingDeque<QueueWork>();
+			queueWorks = new LinkedBlockingDeque<AbstractQueueWork>();
 		}
 
-		public LinkedBlockingDeque<QueueWork> getQueueWorks() {
+		public LinkedBlockingDeque<AbstractQueueWork> getQueueWorks() {
 			return queueWorks;
 		}
 
@@ -113,7 +113,7 @@ public class WorkManager extends DynamicFind {
 		@Override
 		public void run() {
 			while (true) {
-				QueueWork queueWork = null;
+				AbstractQueueWork queueWork = null;
 				try {
 					queueWork = queueWorks.take();
 					queueWork.run();
@@ -133,8 +133,8 @@ public class WorkManager extends DynamicFind {
 
 	@Override
 	public boolean verification(Class<?> clazz) {
-		return superClassOn(clazz, QueueWork.class)
-				|| superClassOn(clazz, AynWork.class)
+		return superClassOn(clazz, AbstractQueueWork.class)
+				|| superClassOn(clazz, AbstractAynWork.class)
 				|| superClassOn(clazz, TimeWork.class);
 	}
 

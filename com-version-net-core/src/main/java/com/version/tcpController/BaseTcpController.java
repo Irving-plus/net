@@ -1,6 +1,5 @@
 package com.version.tcpController;
-
-import com.version.common.entity.Controller;
+import com.version.common.entity.AbstractController;
 import com.version.common.entity.ThreadLocalObject;
 import com.version.common.manager.ThreadLocalManager;
 import com.version.game.LogicController;
@@ -22,23 +21,23 @@ public class BaseTcpController {
 		}
 		return getThreadLocalObject().getRoom();
 	}
-	public Controller getController() {
-		Controller controller = getThreadLocalObject().getController();
+	public AbstractController getController() {
+		AbstractController controller = getThreadLocalObject().getController();
 		if(null==controller) {
 			new Exception("用户是null");
 		}
 	
 		return controller;
 	}
-	public Controller getLogicController() {
-		Controller controller = getThreadLocalObject().getController();
+	public LogicController getLogicController() {
+		AbstractController controller = getThreadLocalObject().getController();
 		if(null==controller) {
 			new Exception("用户是null");
 		}
 		if(controller instanceof LogicController) {
 			return (LogicController)controller;
 		}
-		return controller;
+		return null;
 		
 	}
 	public long getBeginTime() {

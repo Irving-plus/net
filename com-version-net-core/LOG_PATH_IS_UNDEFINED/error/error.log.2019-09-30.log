@@ -1,0 +1,3 @@
+2019-09-30 16:27:51.790 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-30 16:31:40.194 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'
+2019-09-30 16:39:14.817 [main] ERROR o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'debug,info,error' for 'null'

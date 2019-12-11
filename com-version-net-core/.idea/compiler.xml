@@ -18,4 +18,8 @@
       <module name="com-version-net-core" options="-parameters" />
     </option>
   </component>
+  <component name="TypeScriptCompiler">
+    <option name="typeScriptServiceDirectory" value="C:/Program Files/nodejs/node_global/node_modules/typescript" />
+    <option name="versionType" value="SERVICE_DIRECTORY" />
+  </component>
 </project>

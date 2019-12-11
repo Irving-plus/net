@@ -2,14 +2,14 @@ package com.version.common.entity.message;
 
 import java.io.Serializable;
 
-import com.version.common.entity.client.SuperClient;
+import com.version.common.entity.client.AbstractClient;
 
 public class Message implements Serializable{
 	private static final long serialVersionUID = -9043895947534699359L;
 	private int code;
 	private int length;
 	private byte[] data;
-	private SuperClient superClient;
+	private AbstractClient superClient;
 	public int getCode() {
 		return code;
 	}
@@ -28,10 +28,10 @@ public class Message implements Serializable{
 	public void setData(byte[] data) {
 		this.data = data;
 	}
-	public SuperClient getSuperClient() {
+	public AbstractClient getSuperClient() {
 		return superClient;
 	}
-	public void setSuperClient(SuperClient superClient) {
+	public void setSuperClient(AbstractClient superClient) {
 		this.superClient = superClient;
 	}
 }
