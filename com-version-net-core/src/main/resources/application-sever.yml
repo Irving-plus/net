@@ -9,19 +9,4 @@ zhou:
 logging:
   level:
     root: debug,info,error  
-spring:
-  redis:
-    password: 123456
-    database: 0
-    timeout: 6000ms
-    lettuce:
-      pool:
-        max-active: 8
-        max-wait: -1ms
-        max-idle: 8
-        min-idle: 0
-    #sentinel哨兵配置
-    sentinel:
-      password: 742042@Mn
-      master: mymaster
-      nodes: 114.55.92.111:26381,114.55.92.111:26380,114.55.92.111:26381
+
